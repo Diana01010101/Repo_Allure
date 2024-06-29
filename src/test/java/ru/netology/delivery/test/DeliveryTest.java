@@ -80,7 +80,7 @@ class DeliveryTest {
         $("[data-test-id=agreement]").click();
         $(byText("Запланировать")).click();
         $("[data-test-id='name'] .input__sub")
-                .shouldHave(exactText("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
+                .shouldHave(exactText("Нужно указать имя и фамилию. Допустимы только русские буквы, пробелы и дефисы."));
     }
 
 }

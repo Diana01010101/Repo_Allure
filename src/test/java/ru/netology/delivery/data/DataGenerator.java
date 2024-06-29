@@ -64,17 +64,7 @@ public class DataGenerator {
         String name;
         String phone;
 
-        public String getCity() {
-            return null;
-        }
 
-        public String getName() {
-            return null;
-        }
-
-        public String getPhone() {
-            return null;
-        }
     }
 
 }
