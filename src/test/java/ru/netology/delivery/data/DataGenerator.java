@@ -41,6 +41,12 @@ public class DataGenerator {
         return faker.phoneNumber().phoneNumber();
     }
 
+    public static String generateWrongName(String locale) {
+        var faker = new Faker(new Locale(locale));
+        return faker.name().lastName() + " " + faker.name().firstName();
+    }
+
+
     public static class Registration {
         private Registration() {
         }
@@ -57,6 +63,18 @@ public class DataGenerator {
         String city;
         String name;
         String phone;
+
+        public String getCity() {
+            return null;
+        }
+
+        public String getName() {
+            return null;
+        }
+
+        public String getPhone() {
+            return null;
+        }
     }
 
 }
